@@ -1,0 +1,14 @@
+prefix=/opt/Qt-Arm64-5.15.2-Dictpen
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 UiTools
+Description: Qt UiTools module
+Version: 5.15.2
+Libs: -L${libdir} -lQt5UiTools 
+Libs.private: -L/home/lyrecoul/PenDevelopment/OpenGL /opt/Qt-Arm64-5.15.2-Dictpen/lib/libQt5Widgets.so /opt/Qt-Arm64-5.15.2-Dictpen/lib/libQt5Gui.so /opt/Qt-Arm64-5.15.2-Dictpen/lib/libQt5Core.so -lpthread /opt/Qt-Arm64-5.15.2-Dictpen/lib/libQt5Widgets.so /opt/Qt-Arm64-5.15.2-Dictpen/lib/libQt5Gui.so /opt/Qt-Arm64-5.15.2-Dictpen/lib/libQt5Core.so -lGLESv2 -lEGL -lmali   
+Cflags: -DQT_UITOOLS_LIB -I${includedir}/QtUiTools -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets
+
